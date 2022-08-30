@@ -219,25 +219,24 @@ header nav#mobile ul li:hover > ul {
 }
 .HTML-Bild{
   width:15%;
-  margin-top:200px;
   border-radius: 5px;
-  float:inline-start;
+
 }
 .HTML-erklärung-kasten{
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color:#253449;
     border-radius: 10px;
 }
 .HTML-Deutsch-auf-Englisch{
     font-family: arial, "lucida console", sans-serif;
     font-size: 20px;
-    margin-top: 20px;
     color: white;
-            
+    float: inline-start;
 }
 .HTML-Erklärung-Überschrift{
   color: white;
     font-family:arial, "lucida console", sans-serif;
-    position: relative;
     top: -300px;
     font-size: 27px;
 
@@ -300,8 +299,11 @@ header nav#mobile ul li:hover > ul {
 </nav>
 </header>
 <div class="HTML-erklärung-kasten">
-  <span class="HTML-Deutsch-auf-Englisch"><strong>HTML=Hypertext Markup Language (Englisch)HTML=Hypertext Auszeichnungssprache (Deutsch)</strong></span>
+
+  <span class="HTML-Deutsch-auf-Englisch">HTML=Hypertext Markup Language (Englisch) HTML=Hypertext Auszeichnungssprache (Deutsch)</span>
+ <div>
   <img class="HTML-Bild" src="./Screenshot_20220628-163837_Huion Sketch.jpg">
+ </div>
 </div>
 </body>
 </html>
