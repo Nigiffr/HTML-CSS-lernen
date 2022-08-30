@@ -1,0 +1,307 @@
+´<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body,
+html {
+  background: #292e44;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 600px) {
+  body,
+  html {
+    font-size: 48%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body,
+  html {
+    font-size: 53%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body,
+  html {
+    font-size: 57%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body,
+  html {
+    font-size: 70%;
+  }
+}
+
+header {
+  background: #293564;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-align: right;
+  transition: 200ms all;
+  height: 80px;
+  padding-left: 60px;
+}
+
+header nav#normal {
+  margin-top: 3px;
+  color: #1f2641;
+  display: inline-block;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  header nav#normal {
+    display: none;
+  }
+}
+
+header nav#normal ul {
+  margin: 0;
+  padding: 0;
+  transition: all 300ms;
+  display: inline-block;
+}
+
+header nav#normal ul li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  position: relative;
+  transition: all 300ms;
+  padding-right: 3px;
+}
+
+header nav#normal ul li a {
+  display: inline-block;
+  padding: 2.17rem;
+  float: left;
+  min-width: 12rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 1px 0 0;
+  text-decoration: none;
+  background: #1f2641;
+  font-weight: 300;
+  transition: all 300ms;
+  font-family: "Roboto", sans-serif;
+}
+
+header nav#normal ul li:hover > a {
+  background: #6886ff;
+  border-radius: 20px;
+}
+
+header nav#normal ul li ul {
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transition: 300ms all;
+  max-height: 0;
+}
+
+header nav#normal ul li ul li {
+  border-bottom: 1px solid #1f2641;
+}
+
+header nav#normal ul li:hover > ul {
+  max-height: 700px;
+}
+
+header nav#mobile {
+  color: #1f2641;
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  header nav#mobile {
+    display: block;
+  }
+}
+
+header nav #menu {
+  padding: 2.17rem 5% 2.17rem 5%;
+  float: left;
+  width: 90%;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 300;
+  transition: all 500ms;
+  font-family: "Roboto", sans-serif;
+}
+
+header nav#mobile ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-height: 0;
+  transition: all 500ms;
+  overflow: hidden;
+  float: left;
+}
+
+header nav#mobile:hover > ul {
+  max-height: 800px;
+}
+
+header nav#mobile ul li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+  list-style: none;
+  position: relative;
+  transition: all 500ms;
+}
+
+header nav#mobile ul li a {
+  display: inline-block;
+  padding: 2.17rem 5% 2.17rem 5%;
+  float: left;
+  min-width: 12rem;
+  width: 90%;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  background: #1f2641;
+  font-weight: 300;
+  transition: all 500ms;
+  font-family: "Roboto", sans-serif;
+}
+
+header nav#mobile ul li:hover > a {
+  background: #1f2641;
+}
+
+header nav#mobile ul li ul {
+  width: 100%;
+  transition: all 500ms;
+  max-height: 0;
+  overflow: hidden;
+  float: left;
+}
+
+header nav#mobile ul li ul li {
+  display: block;
+  float: left;
+  background: #1f2641;
+  transition: all 500ms;
+}
+
+header nav#mobile ul li ul li a {
+  background: #1f2641;
+}
+
+header nav#mobile ul li:hover > ul {
+  max-height: 500px;
+}
+.CSS-HTML-Bild{
+  float: left ;
+  width: 200px;
+  margin-left: -40px;
+}
+.HTML-Bild{
+  width:15%;
+  margin-top:200px;
+  border-radius: 5px;
+  float:inline-start;
+}
+.HTML-erklärung-kasten{
+    background-color:#253449;
+    border-radius: 10px;
+}
+.HTML-Deutsch-auf-Englisch{
+    font-family: arial, "lucida console", sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+            
+}
+.HTML-Erklärung-Überschrift{
+  color: white;
+    font-family:arial, "lucida console", sans-serif;
+    position: relative;
+    top: -300px;
+    font-size: 27px;
+
+}
+.HTML-erklärung{
+  color: white;
+    font-family:arial, "lucida console", sans-serif;
+    position: relative;
+    top: -300px;
+    padding-left: 600px;
+    font-size: 22px;
+           
+}
+.HTML-Codes-Überschrift{
+  color: white;
+    font-family:arial, "lucida console", sans-serif;
+    position: relative;
+    top: -300px;
+    padding-left: 800px;
+    font-size: 27px;
+}
+
+
+</style>
+</head>
+<body>
+  <header>
+<div>
+  <a href="index.html"><img class="CSS-HTML-Bild"src="./Überschrift.png" width="20%" align="center"  ></a>
+<nav id="normal">
+  <ul>
+    <li><a href="mailto:nico13gming@gmail.com">Hilfe</a></li>
+    <li><a href="">Alle Codes</a></li>
+    <li><a href=""> beste Programme zum Programmieren</a>
+      <ul>
+        <li><a href="https://code.visualstudio.com/">1.visualstudio</a></li>
+        <li><a href="https://atom.io/">2.Atom</a></li>
+        <li><a href="https://www.zoho.com/creator/application-development/?utm_source=capterra&utm_medium=cpc&utm_campaign=gartner-app-dev&utm_source=GetApp">3.Zoho creator</a></li>
+        <li><a href="https://unity.com/pages/pro-free-trial?utm_source=capterra&utm_medium=cpc&utm_campaign=dd_global_capterra-paidreview-acquisition_2022-04-dd-games-cs4&utm_content=default-CP%3Futm_source%3Dcapterra&utm_medium=cpc&utm_campaign=dd_global_capterra-paidreview-acquisition_2022-04-dd-games-cs4&utm_content=ApplicationDevelopment-CP&utm_source=GetApp">4.Unity</a></li>
+        <li><a href="https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml">5.DHTMLX</a></li>
+        <li><a href="https://info.gartnerdigitalmarkets.com/sonarsource-gdm-lp/?utm_medium=paid&utm_campaign=app-dev&utm_content=listing&category=application-development&utm_source=GetApp">6.Sonarqube</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+<nav id="mobile">
+  <div id="menu">Menü</div>
+  <ul>
+    <li><a href="">Hilfe</a></li>
+    <li><a href="">Alle Codes</a></li>
+    <li><a href="">Beste Programme zum Programmieren</a>
+      <ul>
+        <li><a href="">JavaScript</a></li>
+        <li><a href="">HTML 5</a></li>
+        <li><a href="">CSS</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</header>
+<div class="HTML-erklärung-kasten">
+  <span class="HTML-Deutsch-auf-Englisch"><strong>HTML=Hypertext Markup Language (Englisch)HTML=Hypertext Auszeichnungssprache (Deutsch)</strong></span>
+  <img class="HTML-Bild" src="./Screenshot_20220628-163837_Huion Sketch.jpg">
+</div>
+</body>
+</html>
