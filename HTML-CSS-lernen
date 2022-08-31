@@ -134,11 +134,11 @@ header nav#mobile {
 }
 
 header nav #menu {
-  padding: 2.17rem 5% 2.17rem 5%;
+  padding-top:2.17rem 5% 2.17rem 5%;
   float: left;
   width: 90%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 9rem;
   color: white;
   cursor: pointer;
   font-weight: 300;
@@ -232,40 +232,28 @@ header nav#mobile ul li:hover > ul {
     font-family: arial, "lucida console", sans-serif;
     font-size: 20px;
     color: white;
-    float: inline-start;
+    margin-inline: -20px;
 }
-.HTML-Erklärung-Überschrift{
-  color: white;
-    font-family:arial, "lucida console", sans-serif;
-    top: -300px;
-    font-size: 27px;
-
+.HTML-übersetzt{
+ color: #ff4500;
 }
 .HTML-erklärung{
+  text-decoration: wavy;
   color: white;
-    font-family:arial, "lucida console", sans-serif;
-    position: relative;
-    top: -300px;
-    padding-left: 600px;
-    font-size: 22px;
-           
+  font-size: 27px;
+  margin-left: 10px;
+  font-family:arial, "lucida console", sans-serif;
 }
-.HTML-Codes-Überschrift{
-  color: white;
-    font-family:arial, "lucida console", sans-serif;
-    position: relative;
-    top: -300px;
-    padding-left: 800px;
-    font-size: 27px;
+.HTML{
+display: flex;
+justify-content: flex-start;
 }
-
-
 </style>
 </head>
 <body>
   <header>
 <div>
-  <a href="index.html"><img class="CSS-HTML-Bild"src="./Überschrift.png" width="20%" align="center"  ></a>
+  <a href="index.html"><img class="CSS-HTML-Bild"src="./Überschrift.png" width="20%"></a>
 <nav id="normal">
   <ul>
     <li><a href="mailto:nico13gming@gmail.com">Hilfe</a></li>
@@ -284,7 +272,7 @@ header nav#mobile ul li:hover > ul {
 </nav>
 </div>
 <nav id="mobile">
-  <div id="menu">Menü</div>
+  <div id="menu">=</div>
   <ul>
     <li><a href="">Hilfe</a></li>
     <li><a href="">Alle Codes</a></li>
@@ -299,11 +287,48 @@ header nav#mobile ul li:hover > ul {
 </nav>
 </header>
 <div class="HTML-erklärung-kasten">
-
-  <span class="HTML-Deutsch-auf-Englisch">HTML=Hypertext Markup Language (Englisch) HTML=Hypertext Auszeichnungssprache (Deutsch)</span>
- <div>
+<table class="HTML-Deutsch-auf-Englisch">
+  <tr>
+    <td>
+      <ul>
+        <li>
+          <span class="HTML-übersetzt">
+          (Englisch) 
+          </span>
+          HTML=
+          <span class="HTML-übersetzt">
+          Hypertext Markup Language 
+          </span>
+        </li>
+        <li>
+          <span class="HTML-übersetzt">
+          (Deutsch)
+          </span>
+           HTML=
+          <span class="HTML-übersetzt">
+           Hypertext Auszeichnungssprache
+          </span>
+        </li>
+        <li>
+          <span class="HTML-übersetzt">
+          (Französisch)
+          </span>
+          HTML=
+          <span class="HTML-übersetzt">
+          Langage Signalétique Hyper Text
+          </span>
+        </li>
+      </ul>
+    </td>
+  </tr>
+</table>
+ <div class="HTML">
   <img class="HTML-Bild" src="./Screenshot_20220628-163837_Huion Sketch.jpg">
+  <span class="HTML-erklärung">
+    Was ist "HTML"?
+  </span>
  </div>
+
 </div>
 </body>
 </html>
